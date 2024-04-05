@@ -8,7 +8,7 @@ function juego() {
     const MIN_PERMITIDO = 3;
     console.log("Cuántos intentos quieres tener? - (0) para salir");
     intentoUsuario = Number(leer());
-    if (intentoUsuario==0){
+    if (intentoUsuario == 0) {
         console.log("juego terminado")
     } else if (intentoUsuario >= MIN_PERMITIDO) {
         numSecreto = (Math.floor(Math.random()) + 1 * intentoUsuario * 2)
@@ -29,6 +29,6 @@ function juego() {
         console.log("el mínimo de intentos permitidos es ", MIN_PERMITIDO);
         juego();
     }
-    
+
 }
 juego();
